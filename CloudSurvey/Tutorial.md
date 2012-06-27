@@ -6,15 +6,18 @@
 <a name="Overview" />
 ## Overview ##
 
-This demonstration shows how to ...
+This demonstration shows how to create a Web Site using the Azure command-line tool enabling it for GIT deploy and finally deploy it to Azure using the GIT commands.
 
 > **Note:** In order to run through this complete demo, you must have network connectivity and a Microsoft account.
 
 <a id="goals" />
 ### Goals ###
-In this tutorial you will see ho to:
+In this tutorial you will see how to:
 
-1.	...
+1. Create a Web Site with GIT deploy enabled using the Azure command-line tool.
+1. Configure a GIT repository to associated to an Azure Web Site.
+1. Deploy a Web Site to Azure using GIT.
+1. View the deployments history in the management portal.
 
 <a name="technologies" />
 ### Key Technologies ###
@@ -22,8 +25,10 @@ In this tutorial you will see ho to:
 This demo uses the following technologies:
 
 - [Windows Azure Management Portal] [1]
+- [GIT Source Control] [2]
 
 [1]: https://manage.windowsazure.com/
+[2]: http://git-scm.com/
 
 <a name="setup" />
 ### Setup and Configuration ###
