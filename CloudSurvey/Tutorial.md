@@ -30,46 +30,7 @@ This demo uses the following technologies:
 
 To run the demo, you need to have configured a SQL Database in Azure and install and configure the Azure Command-Line tools.
 
-1. Open **Internet Explorer** and navigate to the Windows Azure portal at [https://manage.windowsazure.com](https://manage.windowsazure.com).
-1. Log in to your Microsoft account.
-1. At the Windows Azure portal home page, click **SQL Databases** from the left pane, and select **Servers** to list your SQL servers.
-1. If you have not previously created a server, you will need to do so now; otherwise, you may skip this step. 
-
-	1. To create a new server, click **Add** in the bottom menu.
-	 
-		![Add a new SQL Server](images/add-a-new-sql-server.png?raw=true "Add a new SQL Server")
-
-		_Add a new SQL Server_ 
-
-	1. Insert an **Admin Name** (e.g. SQLAdmin) and a **Password** for the database administrator. Select a **Region** where the server database will be created. Ensure **Allow Windows Azure Services to access the server** is checked, and click **Tick** to create the new server. You will configure firewall rules later on this exercise.
-	 
-		![Server settings](images/server-settings.png?raw=true)
-
-		_Server settings_
-	
-		>**Note:** An administrator account is a master account used to manage the new server. You should avoid using this account in connection strings where the username and password may be exposed.
-		>The password policy requires that the password follow certain rules.
-		>
-		>![PasswordPolicy](images/passwordpolicy.png?raw=true)
-
-
-	1. Finally, the new server information, including **Fully Qualified Server Name**, is shown. 
-
-		![SQL Database server list](images/sqlazureprojectslist.png?raw=true)
-
-		_SQL Database server list_ 
-
-		> **Note:** The fully qualified domain name of the server uses the following format:
-		_\<ServerName\>.database.windows.net_ where _\<ServerName\>_ identifies the server, for example, _plin17p2v1.database.windows.net_.
- 
-1. In the Windows Azure Management portal UI, select **New** from the bottom pane, **SQL Database** | **Custom Create**.
-	
-	![New SQL Database](images/new-sql-database.png?raw=true)
-
-	_Creating a new database_  
-
-1. In the **Database Settings** dialog, set the **Name** to _SurveyDb_, select the _Web_ **Edition**, leave the **Max Size** and **Collation** values with the suggested values, and select the **Server** you created or an existing one.
-
+1. Run the **Setup.cmd** script located at the **\Source** folder to create the database required for the CloudSurvey solution.
 
 1. Open a Command Prompt with administrator privileges and execute the following command to download your account _publish profile_ file. A new browser window will pop up and you must login using your **Microsoft Account** credentials. 
     
