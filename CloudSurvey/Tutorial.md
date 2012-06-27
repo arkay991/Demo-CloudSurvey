@@ -1,4 +1,4 @@
-﻿<a name="title" />
+<a name="title" />
 # Web Sites - CloudSurvey#
 
 ---
@@ -54,83 +54,83 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 	```CommandPrompt
 	azure account import {publish_profile_file}
 	```
-
 ---
 
-<a name="Tutorial" />
-## Tutorial ##
-
-This tutorial is composed of the following segments:
-
-1. [segment 1](#segment1)
-
 <a name="segment1" />
-### Service Bus Relay ###
+### Publishing an application into a Windows Azure Web Site ###
 
-1. Open **Visual Studio 2012** as administrator.
+1. Open a Git Bash command line and CD to the folder where you have the CloudSurvey application (in this case *c:/projects/cloudsurvey*).
 
-1. Click File | Open | Project/Solution and open the **ServiceBusRelay.Console.sln** solution file located at **\Source\ServiceBusRelay-Console**.
+	![Git Bash command line](images/git-bash-command-line.png?raw=true "Git Bash command line")
 
-	> **Speaking Point**
+	_Git Bash command line_
+
+	> **Speaking point:** We have this command line tools that works in Windows, Mac and Linux and it is really simply to use.
+
+1. Execute the **azure** command to ensure Azure CLI Tools are installed and accesible within the Git Bash command line.
+
+	![Azure Git Bash command line](images/azure-git-bash-command-line.png?raw=true "Azure Git Bash command line")
+
+	_Azure Git Bash command line_
+
+1. Run the following command to create the Windows Azure hosted site.
+
+	```CommandPrompt
+	azure site create --git
+	```
+
+	Provide a site name when prompted, for example, _CloudSurveyApp_.
+
+	![Creating a new Web Site using the Command-Line Tools](images/new-web-site-cli.png?raw=true "Creating a new Web Site using the Command-Line Tools")
+
+	_Creating a new Web Site using the Command-Line Tools_
+
+	> **Note:** By specifying **--git** when running the command **site create** you don't need to run additional commands to initialize the Git repository or add the git remote, since these two tasks will be done automatically by the command line tools.
+
+1. Now you will add the current files to the Git repository and push them. To do this, go back to the command prompt and execute the following commands. When prompted, provide your deployment credentials.
+
+	```CommandPrompt
+	git add .
+	git commit -m "initial commit"
+	git push azure master
+	```
+	![Pushing the site files](images/push-site.png?raw=true "Pushing the site files")
+
+	_Pushing the site files_
+
+	> **Note:** Deployment credentials are other than the Microsoft Account associated with your Windows Azure subscription and are valid for use with all Windows Azure web sites associated with your subscription. If you don't know your deployment credentials you can easily reset them using the management portal. Open the web site's **Dashboard** page and click the **Reset deployment credentials** link. Provide a new password and click Ok.
 	>
-	> Let's open ServiceBusRelay Console application. This is a simple application that shows how to expose an on-premises SQL Database using Service Bus Relay services.
-
-1. Press **F5** to run the console application. 
-
-	![Service Bus Relay console Running](images/service-bus-relay-console-running.png?raw=true "Service Bus Relay console Running")
-
-	_Service Bus Relay console Running_
-
-	> **Speaking Point**
+	>![Resetting the deployment credentials](images/reset-credentials-cli.png?raw=true "Resetting the deployment credentials")
 	>
-	> Now, we'll run the console application. 
-	>
-	>The Service Bus allows a Windows Communication Foundation-based (WCF) application to listen to a public network address, even if the application is located behind a NAT or network firewall. This functionality can be used to help applications communicate with each other, regardless of network specific structure. Through the use of the Service Bus as an intermediary you can interconnect different applications without the need to write and maintain complex logic and code to traverse networks.
+	>_Resetting the deployment credentials_
 
+1. Run the following command to open the site in the Windows Azure Management portal and provide your Microsoft Account credentials associated with the subscription to sign in.
 
-1. Open a new instance of **Visual Studio 2012** as administrator.
+	```CommandPrompt
+	azure site portal
+	```
 
-1. Open the **ServiceBusRelay.Web.sln** solution file located at **\Source\ServiceBusRelay-Web**.
+	> **Speaking Point:** Let's check that the publishing was successful.
 
-1. Make sure the cloud project is set as startup project. To do this, right-click **ServiceBusRelay.Web.Azure** and select **Set as StartUp Project**.
+1. In the Windows Azure portal, click your site in the Web Site list and open the **Deployments** page of the site. Check out the latest deployment.
 
-1. Press **F5** to run the application.
+	![Web Site deployments](images/site-deployments.png?raw=true "Web Site deployments")
 
-1. Copy the URL from the browser window.
+	_Web Site deployments_
 
-	![Service Bus Relay web Running](images/service-bus-relay-web-running.png?raw=true "Service Bus Relay web Running")
+1. Now execute the following command to browse to the web site and make sure it runs successfully.
 
-	_Service Bus Relay web Running_
+	```CommandPrompt
+	azure site browse
+	```
 
-	> **Speaking Point**
-	>
-	> Now we'll open a second application, this time a website that consumes the information that it is being exposed through the console application using Service Bus Relay services.
+	![Published web site](images/website-working-cli.png?raw=true "Published web site")
 
-1. Open **Electric Mobile Simulator Lite**, select iPhone simulator and browse to the URL from the previous step.
-
-	![Running the application using iPhone simulator](images/running-the-application-using-iphone-simulato.png?raw=true "Running the application using iPhone simulator")
-
-	_Running the application using iPhone simulator_
-
-	> **Speaking Point**
-	>
-	> Let's access the application from an iPhone simulator and make a call to one of the exposed methods.
-
-1. Click **Customers**.
-
-1. Switch to the running console application and notice the call received.
-
-	![GetCustomers received call](images/getcustomers-received-call.png?raw=true "GetCustomers received call")
-
-	_GetCustomers received call_
-
-	> **Speaking Point**
-	>
-	> If we switch back to the console application, you will notice how the GetCustomers request was logged.
+	_Published web site_
 
 ---
 
 <a name="summary" />
 ## Summary ##
 
-In this demonstration, you have seen how to implement Service Bus Relay services.
+In this tutorial, you saw how to easily create a website and deploy using the Azure Command Line Tools.
