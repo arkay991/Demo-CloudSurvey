@@ -10,6 +10,9 @@
 	-->
 		<webSitesToDelete></webSitesToDelete>
 	</windowsAzureSubscription>
+	<urls>
+		<publishProfileDownloadUrl>https://windows.azure.com/download/publishprofile.aspx</publishProfileDownloadUrl>
+	</urls>
 	<azureSqlServer>
 		<servername></servername>
 		<username></username>

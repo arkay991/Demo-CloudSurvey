@@ -29,13 +29,13 @@ IF %ERRORLEVEL% == 1 GOTO exit
 
 cls
 
-call %powerShellDir%\powershell.exe -Command "&'.\Setup\tasks\show-config-xml-message.ps1' Config.Azure.xml"; exit $LASTEXITCODE
+call %powerShellDir%\powershell.exe -Command "&'.\Setup\tasks\show-config-xml-message.ps1' config.azure.xml"; exit $LASTEXITCODE
 
 IF %ERRORLEVEL% == 1 GOTO exit
 
 cls
 
-%powerShellDir%\powershell.exe -NonInteractive -command ".\Setup\cleanup.azure.ps1" "..\Config.Azure.xml"
+%powerShellDir%\powershell.exe -NonInteractive -command ".\Setup\cleanup.azure.ps1" "..\config.azure.xml"
 
 echo.
 
