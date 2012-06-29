@@ -17,6 +17,7 @@ if ($ResetLocal.IsPresent) {
     Write-Host " 3. Clear Internet Explorer Cookies" -ForegroundColor Red
     Write-Host " 4. Clear Internet Explorer Form Data" -ForegroundColor Red    
     Write-Host " 5. Clear Internet Explorer AutoComplete Settings" -ForegroundColor Red
+	Write-Host " 6. Reset the demo solutions from the working directory"
 }
 
 if ($SetupAzure.IsPresent) {
