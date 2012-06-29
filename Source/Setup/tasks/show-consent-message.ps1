@@ -12,7 +12,11 @@ if ($SetupLocal.IsPresent) {
 if ($ResetLocal.IsPresent) {
     Write-Warning "This script will reset your machine by performing the following tasks:"
     Write-Host ""
-	#TBC
+    Write-Host " 1. Close all Internet Explorer instances"
+    Write-Host " 2. Clear Internet Explorer History" -ForegroundColor Red
+    Write-Host " 3. Clear Internet Explorer Cookies" -ForegroundColor Red
+    Write-Host " 4. Clear Internet Explorer Form Data" -ForegroundColor Red    
+    Write-Host " 5. Clear Internet Explorer AutoComplete Settings" -ForegroundColor Red
 }
 
 if ($SetupAzure.IsPresent) {
@@ -28,9 +32,9 @@ if ($ResetAzure.IsPresent) {
 }
 
 if ($CleanupLocal.IsPresent) {
-Write-Warning "This script will cleanup your local machine by performing the following tasks:"
+    Write-Warning "This script will reset your machine by performing the following tasks:"
     Write-Host ""
-    #TBC
+    Write-Host "1. Remove the working directory for the demo"
 }
 
 if ($CleanupAzure.IsPresent) {
