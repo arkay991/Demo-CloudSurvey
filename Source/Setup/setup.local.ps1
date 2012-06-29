@@ -15,6 +15,8 @@ if($userSettingsFile -eq $nul -or $userSettingsFile -eq "")
 
 [string] $workingDir = $xmlUserSettings.configuration.localPaths.workingDir
 [string] $surveyConnectionString = $xmlUserSettings.configuration.surveyConnectionString
+[string] $publishSettingsFile = $xmlUserSettings.configuration.publishSettingsFile
+[string] $publishProfileDownloadUrl = $xmlUserSettings.configuration.urls.publishProfileDownloadUrl
 
 [string] $sourceCodeDir = Resolve-Path "..\Code"
 
@@ -37,3 +39,15 @@ write-host "========= Install Node Package ... ========="
 $exe = "npm"
 & $exe install azure --g
 write-host "========= Installing Node Package done! ... ========="
+
+# "========= Main Script =========" #
+if (-not ($publishSettingsFile) -or -not (test-path $publishSettingsFile)) {
+    Write-Error "You must specify the publish setting profile. After downloading the publish settings profile from the management portal, specify the file location in the configuration file path under the publishSettingsFile element."
+	Write-Host "You should save the publish setting profile into a known and safe location to avoid being removed. Then configure the publishSettingFile in the config.local.xml file."
+	
+    start $publishProfileDownloadUrl
+    exit 1
+}
+
+#========= Importing the Windows Azure Subscription Settings File... =========
+& ".\tasks\import-waz-publishsettings.ps1" -wazPublishSettings $publishSettingsFile
