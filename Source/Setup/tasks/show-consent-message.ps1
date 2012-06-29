@@ -33,10 +33,11 @@ Write-Warning "This script will cleanup your local machine by performing the fol
     #TBC
 }
 
-if ($ResetAzure.IsPresent) {
-    Write-Warning "This script will cleanup your Azure subscription by performing the following tasks:"
+if ($CleanupAzure.IsPresent) {
+    Write-Warning "This script will reset your Azure subscription by performing the following tasks:"
     Write-Host ""
-    #TBC
+    Write-Host " 1. Delete Websites configured in the Config.Azure.xml file" -ForegroundColor Red
+	Write-Host " 2. Drop the Windows Azure Sql database" -ForegroundColor Red
 }
 
 Write-Host ""
