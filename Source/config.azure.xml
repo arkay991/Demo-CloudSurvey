@@ -1,8 +1,8 @@
 ﻿<configuration>	
 	<windowsAzureSubscription>
 	<!-- 
-		You must configure the publishSettingFile to a known and safe location to avoid being removed by the Cleanup.Local process (this process clears the Download folder and the Desktop)
-		For instances you can set it to: 'C:\SafeLocation\AzDemoSubscription-OtherSubscription-1-1-2012-credentials.publishsettings'
+		You must configure the publishSettingFile to a known and safe location to avoid being removed by the Reset.Local process (this process clears the Download folder and the Desktop)
+		For instance, you can set it to: 'C:\SafeLocation\AzDemoSubscription-OtherSubscription-1-1-2012-credentials.publishsettings'
 	-->
 		<publishSettingsFile></publishSettingsFile>
 	<!-- 
