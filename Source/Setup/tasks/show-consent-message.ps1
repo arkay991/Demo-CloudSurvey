@@ -6,6 +6,7 @@ if ($SetupLocal.IsPresent) {
     Write-Host "1. Copy the demo solution to a working directory"	
 	Write-Host "2. Configure the SQL Azure connection string in the demo solution"
 	Write-Host "3. Install Windows Azure SDK for Node.js"
+	Write-Host "4. Download and import the publish profile file from your Azure account."
 }
 
 if ($ResetLocal.IsPresent) {
