@@ -3,9 +3,9 @@ param([switch]$ResetAzure,[switch]$ResetLocal,[switch]$SetupAzure,[switch]$Setup
 if ($SetupLocal.IsPresent) {
     Write-Warning "This script will setup your machine by performing the following tasks:"
     Write-Host ""    
-    Write-Host "1. Copy the demo solution to a working directory"
-	Write-Host "2. Install Windows Azure SDK for Node.js"
-	Write-Host "3. Configure the SQL Azure connection string in the demo solution"
+    Write-Host "1. Copy the demo solution to a working directory"	
+	Write-Host "2. Configure the SQL Azure connection string in the demo solution"
+	Write-Host "3. Install Windows Azure SDK for Node.js"
 }
 
 if ($ResetLocal.IsPresent) {
