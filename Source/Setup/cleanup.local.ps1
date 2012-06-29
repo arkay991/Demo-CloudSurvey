@@ -8,7 +8,7 @@ Set-Location $scriptDir
 # Get settings from user configuration file
 if($userSettingsFile -eq $nul -or $userSettingsFile -eq "")
 {
-	$userSettingsFile = "..\Config.Local.xml"
+	$userSettingsFile = "..\config.local.xml"
 }
 
 [xml]$xmlUserSettings = Get-Content $userSettingsFile
