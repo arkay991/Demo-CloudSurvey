@@ -11,7 +11,7 @@
   <publishSettingsFile></publishSettingsFile>
  
   <!-- To run the demo, you need to have configured a SQL Database in Azure. -->
-  <surveyConnectionString>Server=tcp:{your_server_name_here},1433;Database={your_db_name_here};User ID={your_user_here};Password=={your_password_here};Trusted_Connection=False;Encrypt=True;Connection Timeout=30;</surveyConnectionString>
+  <surveyConnectionString>Server=tcp:{your_server_name_here},1433;Database={your_db_name_here};User ID={your_user_here};Password={your_password_here};Trusted_Connection=False;Encrypt=True;Connection Timeout=30;</surveyConnectionString>
   
   <urls>
     <publishProfileDownloadUrl>https://windows.azure.com/download/publishprofile.aspx</publishProfileDownloadUrl>
