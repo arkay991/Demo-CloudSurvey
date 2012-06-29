@@ -39,26 +39,11 @@ This demo uses the following technologies:
 
 To run the demo, you need to have configured a SQL Database in Azure and install and configure the Azure Command-Line tool.
 
-1. Run the **Setup.cmd** script located at the **\Source** folder to create the database required for the CloudSurvey solution.
-
-1. Open a Command Prompt with administrator privileges and execute the following command to download your account _publish profile_ file. A new browser window will pop up and you must login using your **Microsoft Account** credentials. 
-    
-    Once logged in, save the publish profile file in a known location (for example, 'C:\\')
-
-	```CommandPrompt
-	azure account download
-	```
-
-	![Downloading the account publish profile](images/download-publishsettings.png?raw=true "Downloading the account publish profile")
-
-	_Downloading the account publish profile_
-
-1. Go back to the Command Prompt and import the file downloaded in the step above by running the following command, specifying the publish profile file location in the _{publish_profile_file}_ placeholder (in this case *'C:\\'*).
-
-	```CommandPrompt
-	azure account import {publish_profile_file}
-	```
----
+1. Run the **Setup.Local.cmd** script located at the **\Source** folder. This script will perform the following tasks:
+	* Copy the demo solution to a working directory.
+	* Configure the SQL Azure connection string in the demo solution.
+	* Install Windows Azure SDK for Node.js.
+	* Download and import the publish profile file from your Azure account.
 
 <a name="segment1" />
 ### Publishing an application into a Windows Azure Web Site ###
