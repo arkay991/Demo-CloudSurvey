@@ -43,7 +43,7 @@ write-host "========= Installing Node Package done! ... ========="
 # "========= Main Script =========" #
 if (-not ($publishSettingsFile) -or -not (test-path $publishSettingsFile)) {
     Write-Error "You must specify the publish setting profile. After downloading the publish settings profile from the management portal, specify the file location in the configuration file path under the publishSettingsFile element."
-	Write-Host "You should save the publish setting profile into a known and safe location to avoid being removed. Then configure the publishSettingFile in the Config.Azure.xml file."
+	Write-Host "You should save the publish setting profile into a known and safe location to avoid being removed. Then configure the publishSettingFile in the config.local.xml file."
 	
     start $publishProfileDownloadUrl
     exit 1
