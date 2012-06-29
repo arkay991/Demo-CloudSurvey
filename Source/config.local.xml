@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <localPaths>
+    <workingDir>C:\Projects</workingDir>
+  </localPaths>
+  
+  <!-- To run the demo, you need to have configured a SQL Database in Azure. -->
+  <surveyConnectionString>Server=tcp:{your_server_name_here},1433;Database={your_db_name_here};User ID={your_user_here};Password=={your_password_here};Trusted_Connection=False;Encrypt=True;Connection Timeout=30;</surveyConnectionString>
+</Configuration>
