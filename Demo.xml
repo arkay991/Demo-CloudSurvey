@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Tutorial xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
+<Demo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
 	<Id>CloudSurvey</Id>
 	<Author>
 		<Name></Name>
@@ -11,6 +11,6 @@
 	<Source>Source</Source>
 	<DependencyChecker>Setup\Dependencies.depi</DependencyChecker>
 	<CustomProperties>    
-		<Property Name="GitHubRepository" Value="https://github.com/WindowsAzure-Preview/Demo-DevCampsWebSites/" />
+		<Property Name="GitHubRepository" Value="https://github.com/WindowsAzure-Preview/Demo-CloudSurvey/" />
 	</CustomProperties>
-</Tutorial>
+</Demo>

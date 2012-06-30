@@ -12,7 +12,7 @@ This demonstration shows how to create a Web Site using the Azure command-line t
 
 <a id="goals" />
 ### Goals ###
-In this tutorial you will see how to:
+In this demo, you will see how to:
 
 1. Create a Web Site with GIT deploy enabled using the Azure command-line tool.
 1. Configure a GIT repository to associated to an Azure Web Site.
@@ -132,4 +132,4 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 <a name="summary" />
 ## Summary ##
 
-In this tutorial, you saw how to create a Web Site using the Azure command-line tool enabling it for GIT deploy and finally deploy it to Azure using the GIT commands.
+In this demo, you saw how to create a Web Site using the Azure command-line tool enabling it for GIT deploy and finally deploy it to Azure using the GIT commands.
