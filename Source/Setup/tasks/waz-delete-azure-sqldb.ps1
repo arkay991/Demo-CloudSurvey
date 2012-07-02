@@ -4,6 +4,5 @@ Param([string] $SQLAzureServerName,
 	[string] $azureDbName)
 
 write-host "========= Dropping Configured SQL Azure Database... ========="
-& "SqlCmd" @("-S", "$SQLAzureServerName", "-U", "$SQLAzureUsername", "-P", "$SQLAzurePassword", "-Q", "ALTER DATABASE $azureDbName SET SINGLE_USER WITH ROLLBACK IMMEDIATE;");
 & "SqlCmd" @("-S", "$SQLAzureServerName", "-U", "$SQLAzureUsername", "-P", "$SQLAzurePassword", "-Q", "DROP DATABASE $azureDbName;");
 write-host "========= Dropping Configured SQL Azure Database Done! ========= "
