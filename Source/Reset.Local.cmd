@@ -56,11 +56,14 @@ ECHO Installing SnapIns Done!
 
 
 %powerShellDir%\powershell.exe -NonInteractive -command ".\Setup\cleanup.local.ps1" "..\config.local.xml"
-%powerShellDir%\powershell.exe -NonInteractive -command ".\Setup\setup.local.ps1" "..\config.local.xml"
+
+%powerShellDir%\powershell.exe -NonInteractive -command ".\Setup\setup.local.ps1" "..\config.local.xml"; exit $LASTEXITCODE
+IF %ERRORLEVEL% == 1 GOTO exit
+
 %powerShellDir%\powershell.exe -NonInteractive -command ".\Setup\reset.environment.ps1" "setup.xml" "..\config.local.xml"
 
 echo.
 
-@pause
-
 :exit
+
+@pause

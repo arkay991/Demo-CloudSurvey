@@ -40,3 +40,5 @@ cls
 IF %ERRORLEVEL% == 1 GOTO exit
 
 :exit
+
+@pause

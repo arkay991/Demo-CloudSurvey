@@ -1,6 +1,6 @@
 <configuration>	
     <localPaths>
-        <vsSettingsFile>assets\VS2012Settings-Font-Output.vssettings</vsSettingsFile>
+        <vsSettingsFile></vsSettingsFile>
     </localPaths>
   <resetEnvironment>
     <closeIE>true</closeIE>
