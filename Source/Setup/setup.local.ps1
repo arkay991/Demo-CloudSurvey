@@ -36,8 +36,7 @@ $x.Save($file)
 write-host "Updating Surveys connection string done!"
 
 write-host "========= Install Node Package ... ========="
-$exe = "npm"
-& $exe install azure --g
+& npm install azure -g
 write-host "========= Installing Node Package done! ... ========="
 
 # "========= Main Script =========" #
