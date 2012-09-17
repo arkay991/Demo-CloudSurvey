@@ -50,7 +50,7 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 
 1. Open a Git Bash command line and CD to the folder where you have the CloudSurvey application (in this case *c:/projects/cloudsurvey*).
 
-	![Git Bash command line](images/git-bash-command-line.png?raw=true "Git Bash command line")
+	![Git Bash command line](Images/git-bash-command-line.png?raw=true "Git Bash command line")
 
 	_Git Bash command line_
 
@@ -61,7 +61,7 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 
 1. Execute the **azure** command.
 
-	![Azure Git Bash command line](images/azure-git-bash-command-line.png?raw=true "Azure Git Bash command line")
+	![Azure Git Bash command line](Images/azure-git-bash-command-line.png?raw=true "Azure Git Bash command line")
 
 	_Azure Git Bash command line_
 
@@ -78,7 +78,7 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 
 	Provide a site name when prompted, for example, _CloudSurveyApp_.
 
-	![Creating a new Web Site using the Command-Line Tool](images/new-web-site-cli.png?raw=true "Creating a new Web Site using the Command-Line Tool")
+	![Creating a new Web Site using the Command-Line Tool](Images/new-web-site-cli.png?raw=true "Creating a new Web Site using the Command-Line Tool")
 
 	_Creating a new Web Site using the Command-Line Tool_
 
@@ -92,7 +92,7 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 	git commit -m "initial commit"
 	git push azure master
 	```
-	![Pushing the site files](images/push-site.png?raw=true "Pushing the site files")
+	![Pushing the site files](Images/push-site.png?raw=true "Pushing the site files")
 
 	_Pushing the site files_
 
@@ -107,7 +107,7 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 
 1. Click your site in the Web Site list and open the **Deployments** page of the site. Check out the latest deployment.
 
-	![Web Site deployments](images/site-deployments.png?raw=true "Web Site deployments")
+	![Web Site deployments](Images/site-deployments.png?raw=true "Web Site deployments")
 
 	_Web Site deployments_
 
@@ -120,7 +120,7 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 	azure site browse
 	```
 
-	![Published web site](images/website-working-cli.png?raw=true "Published web site")
+	![Published web site](Images/website-working-cli.png?raw=true "Published web site")
 
 	_Published web site_
 
