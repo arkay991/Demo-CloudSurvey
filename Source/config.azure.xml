@@ -14,8 +14,8 @@
 		<publishProfileDownloadUrl>https://windows.azure.com/download/publishprofile.aspx</publishProfileDownloadUrl>
 	</urls>
 	<azureSqlServer>
-		<servername></servername>
-		<username></username>
+		<servername>[server name].database.windows.net</servername>
+		<username>[username]@[server name]</username>
 		<password></password>
 		<dbName></dbName>
 	</azureSqlServer>
