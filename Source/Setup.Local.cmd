@@ -1,7 +1,7 @@
 @echo off
 setlocal
 CD /d "%~dp0"
-es
+
 ::Test If script has Admin Priviledges/is elevated
 REG QUERY "HKU\S-1-5-19"
 IF %ERRORLEVEL% NEQ 0 (

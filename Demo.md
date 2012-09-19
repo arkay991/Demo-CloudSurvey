@@ -82,6 +82,8 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 
 	_Creating a new Web Site using the Command-Line Tool_
 
+	> **Note:** If you experience any issues while executing this step, you can create the Web Site and configure the Git repository as explained in <a href=https://www.windowsazure.com/en-us/develop/nodejs/tutorials/create-a-website-(mac)>this link</a>.
+
 	> **Speaking point:**
 	> Now let's add the files to the Git repository and push them, in order to get them running on the cloud.
 
