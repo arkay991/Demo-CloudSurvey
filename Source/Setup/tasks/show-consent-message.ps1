@@ -9,6 +9,16 @@ if ($SetupLocal.IsPresent) {
 	Write-Host "4. Download and import the publish profile file from your Azure account."
 }
 
+if ($ResetLocal.IsPresent) {
+    Write-Host "This demo does not require any reset step in your local machine" -ForegroundColor Green
+    Write-Host ""
+}
+
+if ($CleanupLocal.IsPresent) {
+    Write-Host "This demo does not require any cleanup step in your local machine" -ForegroundColor Green
+    Write-Host ""
+}
+
 if ($SetupAzure.IsPresent) {
     Write-Host "This demo does not require any setup step in Windows Azure" -ForegroundColor Green
     Write-Host ""
