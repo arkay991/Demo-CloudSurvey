@@ -9,33 +9,14 @@ if ($SetupLocal.IsPresent) {
 	Write-Host "4. Download and import the publish profile file from your Azure account."
 }
 
-if ($ResetLocal.IsPresent) {
-    Write-Warning "This script will reset your machine by performing the following tasks:"
-    Write-Host ""
-    Write-Host " 1. Close all Internet Explorer instances"
-    Write-Host " 2. Clear Internet Explorer History" -ForegroundColor Red
-    Write-Host " 3. Clear Internet Explorer Cookies" -ForegroundColor Red
-    Write-Host " 4. Clear Internet Explorer Form Data" -ForegroundColor Red    
-    Write-Host " 5. Clear Internet Explorer AutoComplete Settings" -ForegroundColor Red
-	Write-Host " 6. Reset the demo solutions from the working directory"
-}
-
 if ($SetupAzure.IsPresent) {
-    Write-Warning "This script will setup your Azure subscription by performing the following tasks:"
+    Write-Host "This demo does not require any cleanup step in your local machine" -ForegroundColor Green
     Write-Host ""
-    #TBC
 }
 
 if ($ResetAzure.IsPresent) {
-    Write-Warning "This script will reset your Azure subscription by performing the following tasks:"
+    Write-Host "This demo does not require any cleanup step in your local machine" -ForegroundColor Green
     Write-Host ""
-    #TBC
-}
-
-if ($CleanupLocal.IsPresent) {
-    Write-Warning "This script will reset your machine by performing the following tasks:"
-    Write-Host ""
-    Write-Host "1. Remove the working directory for the demo"
 }
 
 if ($CleanupAzure.IsPresent) {
