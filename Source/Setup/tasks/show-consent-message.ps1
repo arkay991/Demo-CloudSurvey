@@ -10,12 +10,12 @@ if ($SetupLocal.IsPresent) {
 }
 
 if ($SetupAzure.IsPresent) {
-    Write-Host "This demo does not require any cleanup step in your local machine" -ForegroundColor Green
+    Write-Host "This demo does not require any setup step in Windows Azure" -ForegroundColor Green
     Write-Host ""
 }
 
 if ($ResetAzure.IsPresent) {
-    Write-Host "This demo does not require any cleanup step in your local machine" -ForegroundColor Green
+    Write-Host "This demo does not require any cleanup step in Windows Azure" -ForegroundColor Green
     Write-Host ""
 }
 
