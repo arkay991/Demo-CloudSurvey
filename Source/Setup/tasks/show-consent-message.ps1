@@ -25,7 +25,7 @@ if ($SetupAzure.IsPresent) {
 }
 
 if ($ResetAzure.IsPresent) {
-    Write-Host "This demo does not require any cleanup step in Windows Azure" -ForegroundColor Green
+    Write-Host "This demo does not require any reset step in Windows Azure" -ForegroundColor Green
     Write-Host ""
 }
 
