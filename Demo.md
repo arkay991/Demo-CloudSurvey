@@ -6,7 +6,7 @@
 <a name="Overview" />
 ## Overview ##
 
-This demonstration shows how to create a Web Site using the Azure command-line tool enabling it for GIT deploy and finally deploy it to Azure using the GIT commands.
+This demonstration shows how to create a Web Site using the Azure command-line tool, enabling it for Git deploy and finally deploy it to Azure using the Git commands.
 
 > **Note:** In order to run through this complete demo, you must have network connectivity and a Microsoft account.
 
@@ -14,9 +14,9 @@ This demonstration shows how to create a Web Site using the Azure command-line t
 ### Goals ###
 In this demo, you will see how to:
 
-1. Create a Web Site with GIT deploy enabled using the Azure command-line tool.
-1. Configure a GIT repository to associated to an Azure Web Site.
-1. Deploy a Web Site to Azure using GIT.
+1. Create a Web Site with Git deploy enabled using the Azure command-line tool.
+1. Configure a Git repository to associate it to an Azure Web Site.
+1. Deploy a Web Site to Azure using Git.
 1. View the deployments history in the management portal.
 
 <a name="prerequisites" />
@@ -24,7 +24,7 @@ In this demo, you will see how to:
 
 This demo uses the following technologies:
 
-- [GIT Source Control](http://git-scm.com/)
+- [Git Source Control](http://git-scm.com/)
 - [Node.js](http://nodejs.org/#download)
 - Windows Azure Command-Line Tools
 
@@ -55,9 +55,9 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 	_Git Bash command line_
 
 	> **Speaking point:**
-	> To create our Azure Web Site, we are going to use the Azure Command Line Tool, that runs under Node.js, so they perfectly works in Windows, Mac and Linux.
+	> To create our Azure Web Site, we are going to use the Azure Command Line Tool, that runs under Node.js, so it perfectly works in Windows, Mac and Linux.
 	> 
-	> They are really simply to use, just writting **Azure** in a command line console we should get it working.
+	> It is really simple to use, just by writing **Azure** in a command line console we should get it working.
 
 1. Execute the **azure** command.
 
@@ -66,9 +66,9 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 	_Azure Git Bash command line_
 
 	> **Speaking point:**
-	> Let's run the command to create an Azure Web Site and specify, for this case, that we want to create a GIT repository within that Web Site.
+	> Let's run the command to create an Azure Web Site and specify, for this case, that we want to create a Git repository within that Web Site.
 	>
-	> This way, we don't need to run additional commands to initialize the Git repository or add the git remote, since these two tasks will be done automatically by the command line tool.
+	> This way, we don't need to run additional commands to initialize the Git repository or add the Git remote, since these two tasks will be done automatically by the command line tool.
 
 1. Run the following command to create the Windows Azure hosted site.
 
@@ -99,7 +99,7 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 	_Pushing the site files_
 
 	> **Speaking point:**
-	> Let's check that the GIT deployment was successful, by opening the Azure Management Portal and browsing to the Web Site Deployments page.
+	> Let's check that the Git deployment was successful, by opening the Azure Management Portal and browsing to the Web Site Deployments page.
 
 1. Run the following command to open the site in the Windows Azure Management portal and provide your Microsoft Account credentials associated with the subscription to sign in.
 
@@ -134,4 +134,4 @@ To run the demo, you need to have configured a SQL Database in Azure and install
 <a name="summary" />
 ## Summary ##
 
-In this demo, you saw how to create a Web Site using the Azure command-line tool enabling it for GIT deploy and finally deploy it to Azure using the GIT commands.
+In this demo, you saw how to create a Web Site using the Azure command-line tool, enable it for Git deploy and finally deploy it to Azure using the Git commands.
