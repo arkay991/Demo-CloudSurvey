@@ -24,6 +24,11 @@
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             GlobalConfiguration.Configuration.DependencyResolver = new SimpleDependencyResolver();
 
+            using (var context = new SurveyContext())
+            {
+                var dummy = context.Surveys.FirstOrDefault();
+            }
+
             InitializeSecurity();
         }
 
