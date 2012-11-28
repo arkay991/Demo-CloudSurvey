@@ -30,7 +30,7 @@ This demo uses the following technologies:
 
 	> **Note:** If you do not have Windows Azure Command-Line Tools installed, open a command prompt with administrator privileges and run the following command:
 	> 
-	> `npm install azure -g`
+	> `npm install azure-cli -g`
 	> 
 	> By using -g, Windows Azure Command-Line Tools will install on your machine globally. That means, you will be able to execute azure commands from any location.
 
